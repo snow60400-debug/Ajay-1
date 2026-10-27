@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="Get Hub — discover your next gaming adventure.">
+  <title>Get Hub — Level Up Your Next Adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Get Hub home">
+      <span class="brand-mark">G<span>+</span></span>
+      <span>GET<span class="brand-light">HUB</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="navLinks">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#games">Explore Games</a>
+      <a class="nav-link" href="#about">About</a>
+    </nav>
+    <a class="top-cta" href="#games">Explore <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> YOUR NEXT LEVEL STARTS HERE</div>
+        <h1>FIND YOUR<br> <span class="gradient-text">NEXT WORLD.</span></h1>
+        <p class="hero-description">Discover unforgettable worlds, hidden gems, and games worth getting lost in. Your next adventure is only one click away.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#games">Explore Games <span>↘</span></a>
+          <a class="button button-ghost" href="#about"><span class="play-icon">▶</span> What is Get Hub?</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>01</strong><span>PLACE TO EXPLORE</span></div>
+          <i></i>
+          <div><strong>∞</strong><span>WORLDS TO DISCOVER</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative gaming artwork">
+        <div class="art-grid"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-core">
+          <div class="core-top">GH / 001</div>
+          <div class="core-symbol">G<span>+</span></div>
+          <div class="core-bottom">PLAY DIFFERENT.</div>
+        </div>
+        <div class="floating-tag tag-top"><span class="tag-dot"></span> PLAYER ONE <b>ONLINE</b></div>
+        <div class="floating-tag tag-bottom"><span>✦</span> DISCOVER SOMETHING NEW</div>
+        <div class="art-label">EST. FOR EXPLORERS</div>
+      </div>
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="games-section section-wrap" id="games">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">THE DISCOVERY ZONE</div>
+          <h2>EXPLORE <span class="gradient-text">GAMES.</span></h2>
+          <p class="muted">A few worlds to kick off your next adventure.</p>
+        </div>
+        <div class="game-count"><span id="gameCount">06</span> WORLDS LISTED</div>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box">
+          <span>⌕</span>
+          <input type="search" id="gameSearch" placeholder="Search games..." aria-label="Search games">
+          <kbd>/</kbd>
+        </label>
+        <div class="filters" id="filters" aria-label="Filter games">
+          <button class="filter-chip selected" data-filter="All">All games</button>
+          <button class="filter-chip" data-filter="Open World">Open world</button>
+          <button class="filter-chip" data-filter="Survival">Survival</button>
+          <button class="filter-chip" data-filter="Action">Action</button>
+        </div>
+      </div>
+
+      <div class="games-grid" id="gamesGrid">
+        <article class="game-card" data-title="Subnautica" data-genre="Survival" data-description="Dive into an alien ocean, gather resources, and uncover the secrets hidden below.">
+          <div class="game-art ocean">
+            <span class="art-index">GH / 001</span><span class="game-symbol">◉</span><span class="art-caption">UNKNOWN DEPTHS</span>
+            <span class="genre-badge">SURVIVAL</span>
+          </div>
+          <div class="game-info"><div><h3>Subnautica</h3><p>Explore an alien ocean</p></div><button class="details-button" aria-label="Details for Subnautica">↗</button></div>
+        </article>
+        <article class="game-card" data-title="Valheim" data-genre="Survival" data-description="Build, craft, and survive in a myth-inspired world made for exploration.">
+          <div class="game-art forest">
+            <span class="art-index">GH / 002</span><span class="game-symbol">ᛟ</span><span class="art-caption">THE NORTH AWAITS</span>
+            <span class="genre-badge">SURVIVAL</span>
+          </div>
+          <div class="game-info"><div><h3>Valheim</h3><p>Survive the wild frontier</p></div><button class="details-button" aria-label="Details for Valheim">↗</button></div>
+        </article>
+        <article class="game-card" data-title="Biomutant" data-genre="Open World" data-description="Explore a colorful post-apocalyptic world full of strange creatures and discoveries.">
+          <div class="game-art mutant">
+            <span class="art-index">GH / 003</span><span class="game-symbol">✳</span><span class="art-caption">REBORN WILD</span>
+            <span class="genre-badge">OPEN WORLD</span>
+          </div>
+          <div class="game-info"><div><h3>Biomutant</h3><p>A strange world to roam</p></div><button class="details-button" aria-label="Details for Biomutant">↗</button></div>
+        </article>
+        <article class="game-card" data-title="Sleeping Dogs" data-genre="Action" data-description="Step into a gritty open-world crime drama with intense martial arts combat.">
+          <div class="game-art neon-city">
+            <span class="art-index">GH / 004</span><span class="game-symbol">夜</span><span class="art-caption">CITY AFTER DARK</span>
+            <span class="genre-badge">ACTION</span>
+          </div>
+          <div class="game-info"><div><h3>Sleeping Dogs</h3><p>Own the streets at night</p></div><button class="details-button" aria-label="Details for Sleeping Dogs">↗</button></div>
+        </article>
+        <article class="game-card" data-title="Tomb Raider" data-genre="Action" data-description="Solve ancient mysteries, explore dangerous ruins, and survive a cinematic adventure.">
+          <div class="game-art ruins">
+            <span class="art-index">GH / 005</span><span class="game-symbol">⌁</span><span class="art-caption">LOST CIVILIZATIONS</span>
+            <span class="genre-badge">ACTION</span>
+          </div>
+          <div class="game-info"><div><h3>Tomb Raider</h3><p>Uncover what was lost</p></div><button class="details-button" aria-label="Details for Tomb Raider">↗</button></div>
+        </article>
+        <article class="game-card" data-title="Minecraft" data-genre="Open World" data-description="Shape your own world, build anything you imagine, and explore at your own pace.">
+          <div class="game-art blockworld">
+            <span class="art-index">GH / 006</span><span class="game-symbol">▦</span><span class="art-caption">BUILD YOUR REALITY</span>
+            <span class="genre-badge">OPEN WORLD</span>
+          </div>
+          <div class="game-info"><div><h3>Minecraft</h3><p>Your world, your rules</p></div><button class="details-button" aria-label="Details for Minecraft">↗</button></div>
+        </article>
+      </div>
+      <div class="no-results" id="noResults" hidden>No games found. Try another search.</div>
+      <p class="demo-note">Starter showcase: game cards are examples. Add your own games and links in <code>index.html</code>.</p>
+    </section>
+
+    <section class="about-section section-wrap" id="about">
+      <div class="about-mark"><span>G<span>+</span></span></div>
+      <div class="about-copy">
+        <div class="eyebrow">WELCOME TO THE HUB</div>
+        <h2>MADE FOR THE<br><span class="gradient-text">CURIOUS PLAYER.</span></h2>
+        <p>Get Hub is a personal gaming discovery project built for people who love exploring new worlds. Find a game, follow your curiosity, and make your next session count.</p>
+      </div>
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer section-wrap">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">G<span>+</span></span><span>GET<span class="brand-light">HUB</span></span></a>
+    <p>INDEPENDENT GAMING DISCOVERY PROJECT</p>
+    <span>© <span id="year"></span> GET HUB</span>
+  </footer>
+
+  <dialog id="gameDialog" class="game-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close details">×</button>
+    <div class="eyebrow">GAME FILE / GET HUB</div>
+    <h2 id="dialogTitle">Game title</h2>
+    <span class="dialog-genre" id="dialogGenre">GENRE</span>
+    <p id="dialogDescription"></p>
+    <p class="dialog-hint">This is a demo detail panel. Add an official game link to this card in the HTML when you're ready.</p>
+  </dialog>
+  <div class="dialog-backdrop" id="dialogBackdrop"></div>
+  <script src="script.js"></script>
+</body>
+</html>
