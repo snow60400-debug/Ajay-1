@@ -27,3 +27,10 @@ The card art is made from CSS gradients and symbols, so no external game images 
 
 ## Notes
 This is a static personal project. It does not include accounts, a database, checkout, or game downloads. Only link to official game pages or content you have permission to use.
+
+
+## Play the first original game
+
+`neon-run.html` is a self-contained HTML5 platformer. It works on GitHub Pages without a build step. Upload it to the same repository root as `index.html`, `style.css`, and `script.js`. The homepage includes a Neon Run card linking to it.
+
+Controls: A/D or arrow keys to move, Space/Up/W to jump. On touch screens, use the on-screen left/right/jump buttons.

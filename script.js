@@ -62,7 +62,9 @@ function openDetails(card) {
   dialog.showModal();
 }
 cards.forEach(card => {
-  card.querySelector(".details-button").addEventListener("click", () => openDetails(card));
+  const action = card.querySelector(".details-button");
+  if (card.dataset.playLink) action.href = card.dataset.playLink;
+  else if (action.tagName === "BUTTON") action.addEventListener("click", () => openDetails(card));
 });
 document.getElementById("dialogClose").addEventListener("click", () => dialog.close());
 dialog.addEventListener("click", event => {
